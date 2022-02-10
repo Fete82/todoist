@@ -51,8 +51,12 @@
   </div>
 </nav>
     <div class="container my-5">
-        <h2>Hello World!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ab pariatur voluptates beatae quidem distinctio dolor aliquid? Earum quam temporibus, minus explicabo fugiat maiores maxime corrupti consequuntur tempore impedit non natus nesciunt laudantium ipsum repudiandae rerum esse totam dolorum sit doloremque eos voluptate. Aperiam repellendus quo libero ex, vel velit.
+        <!-- Two ways to print out variables from routes -->
+        <h2><?php echo $title; ?></h2>
+        <!-- or... -->
+        <h2>{{ $title }}</h2>
+        <!-- Pretty cool stuff! -->
+        <p> {{ $content }}
         </p>
     </div>
     <!-- Bootstrap JS -->
