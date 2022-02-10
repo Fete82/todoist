@@ -24,6 +24,11 @@ Route::get('/hello', function () {
     return view('hello', [
         'content' => $hipsum,
         'title' => 'Laravel Pro',
+        'todos' => [
+            'Learn PHP',
+            'Love Bootstrap',
+            'Keep Bootstrapping',
+        ]
     ]); // $content
 });
 
